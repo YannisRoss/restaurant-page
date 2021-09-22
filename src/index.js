@@ -1,0 +1,1 @@
+alert("src/index.js initialized")
