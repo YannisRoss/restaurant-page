@@ -1,1 +1,1 @@
-alert("src/index.js initialized")
+console.log("src/index.js initialized")
