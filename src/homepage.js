@@ -1,7 +1,7 @@
 import { clickContactButton, clickMenuButton, clickHomeButton } from "./buttonFunctions"
 
-console.log("initial.js loaded")
-export function initialLoad() {
+console.log("homepage.js loaded")
+export function homePageLoad() {
 
     console.log("initialLoad initiated")
     let parent = document.getElementById("content")
@@ -12,7 +12,7 @@ export function initialLoad() {
     let tabDiv = document.createElement('div')
         let tabDivId = document.createAttribute('id')
             tabDivId.value = 'tab-div'
-
+            tabDiv.setAttributeNode(tabDivId)
         let homeButton = document.createElement('button')
             homeButton.innerHTML = 'Home'
             homeButton.addEventListener('click', clickHomeButton)
