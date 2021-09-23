@@ -1,5 +1,5 @@
 console.log("src/index.js initialized")
 
-import { homePageLoad } from "./homepage"
+import { initialBuild } from './initialBuild.js'
 
-homePageLoad()
+initialBuild()
