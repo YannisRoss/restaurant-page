@@ -14,8 +14,12 @@
 button {
 
     border: 1px solid red;
-    font-size: 0.2em;
+    margin: 0.1em;
+    border-radius: 25% 25% 0% 0%;
+    font-size: 0.6em;
     height: 2em;
+    padding: 0.3em;
+    background-color: goldenrod;
 }
 #content {
     box-sizing: border-box;
