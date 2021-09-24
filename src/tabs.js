@@ -1,8 +1,7 @@
-import { clickContactButton, clickMenuButton, clickHomeButton } from "./buttonFunctions"
 import { article } from "./initialBuild"
 
 export function homePageLoad() {
-    document.getElementById("article").style.backgroundColor = "rgb(0,0,0,0";
+    article.style.backgroundColor = "rgb(0,0,0,0)";
 
     console.log("homepage initialized")
     article.innerHTML = ''
@@ -15,7 +14,7 @@ export function homePageLoad() {
         let disclaimerClass = document.createAttribute("class")
         disclaimerClass.value = "disclaimer"
         disclaimer.setAttributeNode(disclaimerClass)
-        disclaimer.innerHTML = "*Allergy warning: Basil, Salt"
+        disclaimer.innerHTML = "*Not a real restaurant"
 
 
     article.appendChild(description)
@@ -26,6 +25,8 @@ export function homePageLoad() {
 export function menuPageLoad() {
 
     console.log('menu initialized')
+
+    article.style.backgroundColor = "rgb(0,0,0,0.5)";
 
     let parent = document.getElementById('article')
         parent.innerHTML = ''
@@ -59,17 +60,23 @@ export function menuPageLoad() {
                     i++
                 }
                 menu.appendChild(mainsList)
-                article.style.backgroundColor = "rgb(0,0,0,0.5";
 
     
 }
 
 export function contactPageLoad() {
+
+    console.log('contactPage initialized')
+    article.style.backgroundColor = "rgb(0,0,0,0.5)";
+    console.log(1)
+
     article.innerHTML = ''
+
 
         let contactsList = document.createElement('ul')
         let contacts = ['@basil_and_salt', '1-800-DINE', 'info@basilAndSalt.com']
-        
+        console.log(2)
+
             let i = 0
             while (i < contacts.length) {
                 let contact = document.createElement('li')

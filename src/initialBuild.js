@@ -1,6 +1,5 @@
 
-import { clickContactButton, clickMenuButton, clickHomeButton } from "./buttonFunctions"
-import { homePageLoad, menuPageLoad, contactPageLoad } from "./homepage"
+import { homePageLoad, menuPageLoad, contactPageLoad } from "./tabs"
 
 export let article = document.createElement("article")
 export function initialBuild() {
