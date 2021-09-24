@@ -1,14 +1,15 @@
 
 import { clickContactButton, clickMenuButton, clickHomeButton } from "./buttonFunctions"
-import { homePageLoad } from "./homepage"
+import { homePageLoad, menuPageLoad } from "./homepage"
 
 export let article = document.createElement("article")
 export function initialBuild() {
 
     console.log("initialLBuild initiated")
         let parent = document.getElementById("content")
-
- 
+            let articleId = document.createAttribute('id')
+                articleId.value = 'article'
+                article.setAttributeNode(articleId)
         
         let header = document.createElement("h1")  
             header.innerHTML = "basil & salt"      
@@ -24,7 +25,7 @@ export function initialBuild() {
                 contactButton.addEventListener('click', clickContactButton)
             let menuButton = document.createElement('button')
                 menuButton.innerHTML = "Menu"
-                menuButton.addEventListener('click', clickMenuButton)
+                menuButton.addEventListener('click', menuPageLoad)
         
     parent.appendChild(header)
     parent.appendChild(tabDiv)
