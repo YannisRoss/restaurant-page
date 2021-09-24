@@ -63,3 +63,20 @@ export function menuPageLoad() {
 
     
 }
+
+export function contactPageLoad() {
+    article.innerHTML = ''
+
+        let contactsList = document.createElement('ul')
+        let contacts = ['@basil_and_salt', '1-800-DINE', 'info@basilAndSalt.com']
+        
+            let i = 0
+            while (i < contacts.length) {
+                let contact = document.createElement('li')
+                contact.innerHTML = contacts[i]
+                contactsList.appendChild(contact)
+                i++
+            }
+
+        article.appendChild(contactsList)
+}

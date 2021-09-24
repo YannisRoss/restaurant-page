@@ -1,6 +1,6 @@
 
 import { clickContactButton, clickMenuButton, clickHomeButton } from "./buttonFunctions"
-import { homePageLoad, menuPageLoad } from "./homepage"
+import { homePageLoad, menuPageLoad, contactPageLoad } from "./homepage"
 
 export let article = document.createElement("article")
 export function initialBuild() {
@@ -22,7 +22,7 @@ export function initialBuild() {
                 homeButton.addEventListener('click', homePageLoad)
             let contactButton = document.createElement('button')    
                 contactButton.innerHTML = 'Contact us'
-                contactButton.addEventListener('click', clickContactButton)
+                contactButton.addEventListener('click', contactPageLoad)
             let menuButton = document.createElement('button')
                 menuButton.innerHTML = "Menu"
                 menuButton.addEventListener('click', menuPageLoad)
